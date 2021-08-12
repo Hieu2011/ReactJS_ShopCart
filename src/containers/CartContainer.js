@@ -6,7 +6,7 @@ import CartItem from '../component/CartItem';
 import CartResult from '../component/CartResult';
 import * as Message from '../constants/Message';
 import { actDeleteProductInCart, actChangeMessage, actUpdateProductInCart } from './../actions/index';
-
+import { Redirect } from "react-router-dom";
 class CartContainer extends Component {
 
     render() {
@@ -37,6 +37,12 @@ class CartContainer extends Component {
                     />
                 );
             });
+        }else{
+            return <Redirect
+                        to={{
+                        pathname: "/",
+                        }}
+                    />
         }
         return result;
     }
