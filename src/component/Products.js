@@ -19,7 +19,7 @@ class Products extends Component {
                         { this.props.children }
                     </div>
                 </div>
-                <Message></Message>
+          
 
             </section>
         );

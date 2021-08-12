@@ -32,6 +32,7 @@ class CartResult extends Component {
     }
 
     showTotalAmount = (cart) => {
+        console.log(cart);
         var total = 0;
         if (cart.length > 0) {
             for (var i = 0; i < cart.length; i++) {

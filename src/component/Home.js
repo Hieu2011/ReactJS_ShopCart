@@ -10,7 +10,7 @@ class Home extends Component {
             <div>
                 <ProductsContainer />
                 <MessageContainer/>
-                <CartContainer/>
+                {/* <CartContainer/> */}
             </div>
             
         );
